@@ -1,0 +1,62 @@
+<head>
+    <meta charset="UTF-8">
+    <title> Contato- Energia Tropical</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img id="logo" src="img/logo.png"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <form>
+            <label for="=nomesobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nomesobrenome">
+
+            <label for="email">Email</label>
+            <input type="text" id="email">
+
+            <label for="=telefone">Telefone</label>
+            <input type="text" id="telefone">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="70" rows="10" id="mensagem"></textarea>
+
+            <p>Como preferem o nosso contato</p>
+            <div>
+
+                <label for="radio-email">Email</label>
+                <input type="radio" name="contato" value="email" id="radio-email">
+
+                <label for="radio-telefone">Telefone</label>
+                <input type="radio" name="contato" value="telefone" id="radio-telefone">
+
+                <label for="radio-whatsapp">WhatsApp</label>
+                <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+            </div>
+
+            <label><input type="checkbox"> Gostaria de receber nossas novidades por email?</label>
+
+            <input type="submit" value="enviar formulario">
+
+        </form>
+    </main>
+    <footer>
+
+        <p>Copyright Energia Tropical - 2021</p>
+    </footer>
+</body>
+
+</html>

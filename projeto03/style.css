@@ -1,0 +1,44 @@
+.container {
+    background-color: rgb(112, 216, 181);
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    background-color: rgb(247, 122, 201);
+    min-height: 200px;
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.hide-desktop-only {
+    display: none;
+}
+
+
+/* Tablet */
+
+@media (max-width: 768px) {
+    .col {
+        width: 45%;
+    }
+    .hide-desktop-only {
+        display: block;
+    }
+}
+
+
+/* Smartphone */
+
+@media (max-width: 400px) {
+    .col {
+        width: 100%;
+    }
+    .hide-mobile {
+        display: none;
+    }
+}

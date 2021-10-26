@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff
+}
+
+h1 {
+    background: #d976f7;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#logo {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+.principal {
+    /* width: 100%; */
+    background-color: #ffffff;
+    padding: 90px;
+}
+
+.titulo-principal {
+    padding-left: 20px;
+}
+
+p {
+    text-align: center;
+    color: rgb(7, 7, 7);
+}
+
+#mission {
+    text-align: center;
+    font-size: 15px
+}
+
+strong {
+    color: black
+}
+
+.itens {
+    font-style: italic
+}
+
+.benefícios {
+    background: #ccaad6;
+    padding: 20px;
+}
+
+.benefícios h2 {
+    text-align: left;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 20%;
+}
+
+#vita {
+    width: 20%;
+    height: 15%;
+}
