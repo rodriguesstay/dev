@@ -1,34 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exer06</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="shortcut icon" href="imgs/icon.ico" />
 
+    <title>Ex6</title>
     <link rel="stylesheet" href="style.css">
 
+
+    <!-- Bootsrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootsrap CSS -->
+
     <script src="script.js" async></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <h1>Vendas de Veiculos</h1>
+    <div class="container">
 
-    <p> Veiculo:
-        <input type="text" id="inVeiculo"></p>
+        <!-- Menu de navegação -->
 
-    <p> Preço R$:
-        <input type="number" id="inPreco">
-    </p>
+        <nav class="navbar navbar-expand-lg navbar-light">
 
-    <input type="button" value="Ver Promoção" id="btnCalc">
+            <div class="container-fluid">
 
+                <nav class="navbar navbar-light">
 
-    <div id="mostrarInfo"></div>
+                    <div class="container">
+
+                        <a class="navbar-brand" href="#">
+                            <img src="imagens/promo.png" alt="Alto Carros">
+
+                        </a>
+
+                    </div>
+
+                </nav>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  
+                <span class="navbar-toggler-icon"></span>
+  
+              </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Botao Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle btn btn-outline-light text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <b>Modelos</b>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Sandero</a></li>
+                                <li><a class="dropdown-item" href="#">Uno-Fiat</a></li>
+                                <li><a class="dropdown-item" href="#">Ferrari</a></li>
+                            </ul>
+                        </li>
+                        <!-- Botao Normal -->
+
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-light text-white" href="#"><b>Contato</b></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <h1>Venda de veículos</h1>
+        <p>
+            Veículo:
+            <input type="text" id="modelo">
+        </p>
+
+        <p>
+            Preço R$: <input type="number" id="valor">
+        </p>
+        <input type="button" value="Ver promoção" id="btnCalc">
+
+        <div id="mostrarInfo"></div>
 </body>
 
 </html>
